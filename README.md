@@ -1,1 +1,1 @@
-# JdProject
+这个项目为京东练习项目，暂时并不保护JavaScript项目只有HTML和css
