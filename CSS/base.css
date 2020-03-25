@@ -24,7 +24,6 @@ a{
     text-decoration: none;
     color: #999999;
 }
-
 @font-face{/*声明字体*//*位置的字体图标*/
     font-family:"location"; /*这个名字可以自己定义 */
     src: url("../iconfont/location-v1.0/fonts/icomoon.eot?7kkyc2");/*IE9 Compat Modes 这里以及下面的src后面的地址填的都是自己本地的相对地址*/
@@ -51,7 +50,9 @@ a{
     font-size: 12px;
     line-height: 30px;
 }
-
+.shortcut li{/*给所有的li都来一个浮动*/
+    float: left;
+}
 /*左边定位位置字体图标-star*/
 .location{/*字体图标*/
     font-family: "location";/*调用字体*/
@@ -64,8 +65,38 @@ a{
 .li-city span:hover{
     color: red;
 }
-.shortcut li{/*给所有的li都来一个浮动*/
+.li-city{
+    position: relative;
+}
+.li-city:hover{
+    background-color: #fff;
+}
+.dd{
+    width: 300px;
+    /*height: 100px;*/
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+    padding: 10px;
+}
+.li-city:hover .dd{
+    display: block;
+}
+.item{
+    width: 60px;
     float: left;
+    padding: 2px 0;
+}
+.item a{
+    line-height: 24px;
+    padding: 0 8px;
+    float: left;
+}
+.item a:hover{
+    background-color: #f4f4f4;
+    color: red;
 }
 .fore1 a:nth-child(2),.fore5 a{
     color: red;
