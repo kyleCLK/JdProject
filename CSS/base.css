@@ -54,15 +54,15 @@ a{
     float: left;
 }
 /*左边定位位置字体图标-star*/
-.location{/*字体图标*/
+.location-iconfont{/*字体图标*/
     font-family: "location";/*调用字体*/
     color: red;
     font-style: normal;/*取消斜体*/
 }
-.li-city span{/*位置文字*/
+.city-location span{/*位置文字*/
     color: #999999;
 }
-.li-city span:hover{
+.city-location span:hover{
     color: red;
 }
 .li-city{
@@ -71,33 +71,40 @@ a{
 .li-city:hover{
     background-color: #fff;
 }
+
+
+/*下拉列表*/
 .dd{
     width: 300px;
-    /*height: 100px;*/
     background-color: #fff;
     position: absolute;
-    top: 30px;
-    left: 0;
+    z-index: 1;
     display: none;
-    padding: 10px;
 }
 .li-city:hover .dd{
-    display: block;
-}
+     display: block;
+ }
 .item{
-    width: 60px;
     float: left;
-    padding: 2px 0;
+    width: 60px;
+    padding:  2px 0;
 }
 .item a{
-    line-height: 24px;
-    padding: 0 8px;
     float: left;
+    padding: 0 8px;
 }
 .item a:hover{
     background-color: #f4f4f4;
     color: red;
 }
+
+
+/*左边定位位置字体图标-end*/
+
+
+
+
+/*右边导航栏部分*/
 .fore1 a:nth-child(2),.fore5 a{
     color: red;
 }
@@ -113,5 +120,5 @@ a{
 .fore4 a:hover{
     color: red;
 }
-/*左边定位位置字体图标-end*/
+
 /*导航栏-end*/
