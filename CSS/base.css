@@ -1,7 +1,13 @@
 body{
     background-color: #f6f6f6;
 }
-ul{
+input,button{
+    border: 0;
+    outline: none;/*取消边框*/
+}
+ul,h1{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 a{
@@ -60,7 +66,7 @@ header{
 }
     /*左边的定位位置*/
 .city{
-    /*margin-left: 200px;*/
+    margin-left: 200px;
 }
 .a-city{
     color: #999999;
@@ -122,7 +128,7 @@ header{
 .fore8{
     position: relative;
 }
-.fore8 a img{
+.fore8 img{
     position: absolute;
     top: 31px;
     left: 0;
@@ -131,9 +137,9 @@ header{
 }
 .mobile-pop{
     display: none;
-    width: 100px;
+    width: 190px;
     height: 100px;
-    background-color: red;
+    background-color: #ffffff;
     position: absolute;
     top: 31px;
     right: 0;
@@ -143,3 +149,53 @@ header{
     display: block;
 }
 /*快速导航栏部分-结束*/
+
+
+/*中间搜索部分*/
+.hds{
+    width: 100%;
+    background-color: #fff;
+}
+.middle{
+    height: 140px;
+    position: relative;
+}
+/*logo图标部分*/
+.logo{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    box-shadow: 0 -10px 20px rgba(0,0,0,0.3);
+}
+.logo a{
+    width: 190px;
+    height: 170px;
+    display: block;
+    background: #ffffff url("../images/logo.png") no-repeat;/*因为是png图片背景是透明，所以添加了白色*/
+}
+/*搜索框部分*/
+.form{
+    width: 550px;
+    height: 35px;
+    background-color: pink;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    border: 2px red solid;
+}
+.form input{
+    width: 478px;
+    height: 35px;
+    float: left;
+    font-size: 12px;
+    padding-left: 10px;/*因为会撑开盒子把button按钮给挤走，所以上面的宽度改为478px*/
+}
+.form input:focus{
+    color: #998899;
+}
+.form button{
+    width: 62px;
+    height: 35px;
+    background-color: red;
+    float: left;
+}
