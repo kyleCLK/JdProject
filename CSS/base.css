@@ -5,7 +5,7 @@ input,button{
     border: 0;
     outline: none;/*取消边框*/
 }
-ul,h1{
+ul,li,h1,h2,h3,h4,h5,h6,body,dd,dl,dt,form,p,input,button{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -34,6 +34,7 @@ i{
 .fr{
     float: right;
 }
+/*字体图标iconfont*/
 @font-face {
     font-family: 'icomoon';
     src:  url('../iconfont/icomoon-v1.0/fonts/icomoon.eot?sj9emo');
@@ -45,8 +46,6 @@ i{
     font-style: normal;
     font-display: block;
 }
-
-
 /*header部分-开始*/
 header{
     height: 80px;
@@ -109,18 +108,10 @@ header{
 .fore1 a:nth-child(2),.fore5 a{/*免费注册和会员采购的字体颜色*/
     color: red;
 }
-.li-city:hover a,
-.fore1 a:hover,
-.fore2 a:hover,
-.fore3 a:hover,
-.fore4 a:hover,
-.fore5 a:hover{
+.li-city:hover a,.hove:hover a{
     color: red;
 }
-.fore3 i,
-.fore5 i,
-.fore6 i,
-.fore7 i {/*添加iconfont字体图标*/
+.shortcut-iconfont i {/*添加iconfont字体图标*/
     font-family: icomoon;
     line-height: 12px;
 }
@@ -154,7 +145,7 @@ header{
 /*中间搜索部分*/
 .hds{
     width: 100%;
-    background-color: #fff;
+    background-color: #f6f6f6;
 }
 .middle{
     height: 140px;
@@ -198,4 +189,45 @@ header{
     height: 35px;
     background-color: red;
     float: left;
+}
+.form button i{
+    font-family: icomoon;
+    color: #ffffff;
+    font-style: normal;
+}
+/*我的购物车部分*/
+.shop-cart{
+    width: 130px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    right: 140px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    line-height: 35px;
+    text-align: center;
+}
+.shop-cart:hover{
+    border: 1px solid red;
+}
+
+.shop-cart i{
+    font-family: icomoon;
+    font-size: 13px;
+    color: red;
+    margin-right: 13px;
+}
+.shop-cart a{
+    color: red;
+}
+.shop-cart span{
+    width: 18px;
+    height: 15px;
+    background-color: red;
+    border-radius: 7px;
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    line-height: 15px;
+    color:#ffffff;
 }
