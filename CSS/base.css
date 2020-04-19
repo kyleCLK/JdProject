@@ -142,6 +142,7 @@ header{
 /*快速导航栏部分-结束*/
 
 
+
 /*中间搜索部分*/
 .hds{
     width: 100%;
@@ -151,7 +152,7 @@ header{
     height: 140px;
     position: relative;
 }
-/*logo图标部分*/
+    /*左边logo图标部分*/
 .logo{
     position: absolute;
     top: -30px;
@@ -164,14 +165,16 @@ header{
     display: block;
     background: #ffffff url("../images/logo.png") no-repeat;/*因为是png图片背景是透明，所以添加了白色*/
 }
-/*搜索框部分*/
+
+    /*搜索框部分*/
 .form{
     width: 550px;
     height: 35px;
     background-color: pink;
     position: absolute;
     top: 25px;
-    left: 320px;
+    /*left: 320px;*/
+    left: 260px;
     border: 2px red solid;
 }
 .form input{
@@ -195,13 +198,16 @@ header{
     color: #ffffff;
     font-style: normal;
 }
-/*我的购物车部分*/
+
+
+    /*右边我的购物车部分*/
 .shop-cart{
     width: 130px;
     height: 35px;
     position: absolute;
     top: 25px;
-    right: 140px;
+    /*right: 140px;*/
+    right: 230px;
     background-color: #fff;
     border: 1px solid #ccc;
     line-height: 35px;
@@ -230,4 +236,42 @@ header{
     left: 30px;
     line-height: 15px;
     color:#ffffff;
+}
+    /*搜索框下面关键词部分*/
+.hot-words{
+    position:absolute;
+    top: 65px;
+    left: 260px;
+}
+.hot-words a{
+    margin-left: 10px;
+}
+.hot-words .f10{
+    color: red;
+}
+
+/*中间大导航栏部分*/
+.nav-items{
+    width: 770px;
+    height: 40px;
+    position:absolute;
+    bottom: 0;
+    left: 200px;
+}
+.nav-items ul li{
+    float: left;
+ }
+
+.nav-items li a{
+    font-size: 15px;
+    color:#000000;
+    line-height: 40px;
+    margin: 0 11px;
+}
+.nav-items li a:hover{
+    color: red;
+}
+.nav-items .nt1,.nav-items .nt2{
+    color: red;
+    font-weight: 700;
 }
