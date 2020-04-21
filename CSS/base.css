@@ -275,3 +275,112 @@ header{
     color: red;
     font-weight: 700;
 }
+
+
+
+
+/*页面底部部分*/
+    /*四个图标部分*/
+footer{
+    height: 568px;
+}
+.service{
+    height: 102px;
+    border-bottom: 1px solid #dedede;
+    /*overflow: hidden;!*清除浮动*!*/
+}
+.service-inner{
+    padding: 30px 0;
+}
+/*.service-item{*/
+/*    float: left;*/
+/*}*/
+.service-unit{
+    width: 297px;
+    height: 42px;
+    float: left;
+    position: relative;
+    line-height: 42px;
+}
+    /*四个图标*/
+.service-unit h5{
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 38px;
+    height: 42px;
+    background-image: url("../images/23f3ddf914b1b527d0429a3d713cfe3a.png") ;
+    background-repeat: no-repeat;
+    text-indent: -999em;/*隐藏H5标签里面的文字*/
+}
+.unit-f1{
+    background-position: 0 -192px;/*0px -192px*/
+}
+.unit-f2{
+    background-position: -40px -192px;/*0px -192px*/
+}
+.unit-f3{
+    background-position: -81px -192px;/*0px -192px*/
+}
+.unit-f4{
+    background-position: -122px -192px;/*0px -192px*/
+}
+.service-unit p{
+    color: #444444;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+    /*底部帮助部分*/
+.help{
+    height: 160px;
+    padding: 20px 0;
+    /*background-color: #e74c3c;*/
+    border-bottom: 1px solid #dedede;
+}
+.help-list{
+    height: 160px;
+}
+        /*左边指南部分*/
+.help-nav{
+    float: left;
+    line-height:22px;
+    /*margin-right: 150px;*//*或许可以用宽度*/
+    width: 198px;
+    color: #666;
+}
+
+.help-nav h5{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.help-nav li a:hover{
+    color: red;
+}
+        /*右边自营覆盖区部分*/
+.help-cover{
+    float: right;
+    width: 200px;
+    height: 150px;
+    color: #666;
+ }
+.help-cover h5{
+    text-align: center;
+    font-size: 14px;
+}
+.help-cover p{
+    font-size: 12px;
+    display: block;
+    padding: 0 13px;
+}
+.help-cover-more{
+    text-align: right;
+}
+.help-cover-more a:hover{
+    color: red;
+}
+.help-cover p{
+    font-family: icomoon;
+}
