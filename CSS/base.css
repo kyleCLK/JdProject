@@ -384,3 +384,89 @@ footer{
 .help-cover p{
     font-family: icomoon;
 }
+
+    /*底部最下面版权模块部分*/
+.copyright-inner{
+    padding:10px;
+    text-align: center;
+}
+.copyright-inner a{
+    color: #666;
+}
+.copyright-inner a:hover{
+    color: red;
+}
+.copyright-spacer{/*空格的竖线样式*/
+    color: #ccc;
+    margin: 0 5px ;
+    font-size: 16px;
+}
+/*第一段*/
+.copyright-info{
+    font-size: 12px;
+    color: #999;
+    line-height: 22px;
+    padding: 10px 0;
+}
+.copyright-info a{
+    color: #999;
+}
+.a-spacer{
+    margin-left: 15px;
+}
+/*国家地区部分*/
+.copyright-inter-ico{/*i标签转行内块元素*/
+    width: 15px;
+    height: 12px;
+    display: inline-block;
+    background-image: url(../images/23f3ddf914b1b527d0429a3d713cfe3a.png);
+    background-repeat: no-repeat;
+    vertical-align:-1px;/*减去底部的空白间隙，为了要和文字对标同一条水平线上*/
+    margin-right: 10px;
+}
+
+.i1{
+    background-position: -108px -155px;
+}
+.i2{
+    background-position: -168px -153px;
+}
+.i3{
+    background-position: -148px -153px;
+}
+.i4{
+    background-position: -128px -153px;
+}
+.i5{
+    background-position: -108px -170px;
+}
+/*5个网站*/
+.copyright-auth{
+    margin-top: 25px;
+}
+.copyright-auth-ico{
+    display: inline-block;/*a标签转行内块元素给宽高*/
+    width: 103px;
+    height: 32px;
+    background: url(../images/23f3ddf914b1b527d0429a3d713cfe3a.png) no-repeat;
+    /*background-image: url(../images/23f3ddf914b1b527d0429a3d713cfe3a.png);*/
+    /*background-repeat: no-repeat;*/
+    line-height: 1000px;
+    overflow: hidden;/*隐藏第四个a标签多余出来的字*/
+    margin-right: 10px;
+}
+.a1{
+    background-position: -205px -111px;
+}
+.a2{
+    background-position: -205px -74px;
+}
+.a3{
+    background-position: -205px -37px;
+}
+.a4{
+    background-position: -205px 0;
+}
+.a5{
+    background-position: 0 -155px;
+}
