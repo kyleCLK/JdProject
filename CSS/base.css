@@ -146,11 +146,15 @@ header{
 /*中间搜索部分*/
 .hds{
     width: 100%;
-    background-color: #f6f6f6;
+    /*background-color: #f6f6f6;*/
+    border-bottom: 1px #ddd solid;
+    background-color: #fff;
+
 }
 .middle{
     height: 140px;
     position: relative;
+
 }
     /*左边logo图标部分*/
 .logo{
