@@ -9,6 +9,10 @@
     background-color: #fefefe;
 
 }
+/*左边列表部分*/
+.grid-col1{
+    position: relative;
+}
 .grid-col2{
     width: 790px;
     margin: 0 10px;
@@ -17,6 +21,7 @@
     font-size: 14px;
     color: #333;
     line-height: 25px;
+    transition: color 0.2s ease;
 }
 .grid-item span{
     font-size: 12px;
@@ -28,10 +33,28 @@
     height: 25px;
     line-height: 25px;
     padding-left:18px;
+    transition: background-color 0.2s ease;
 }
-.grid-col1 ul li:hover{
+.grid-item:hover{
     background-color: #d9d9d9;
 }
 .grid-item a:hover{
     color:red;
+}
+
+
+
+
+
+/*右边用户部分*/
+.login{
+    height: 101px;
+    border-bottom: 1px solid #eeeeee;
+}
+.news{
+    height: 130px;
+    border-bottom: 1px solid #eeeeee;
+}
+.expand{
+    height: 237px;
 }
