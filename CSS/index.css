@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../iconfont/icomoon-v1.0/fonts/icomoon.eot?sj9emo');
+    src:  url('../iconfont/icomoon-v1.0/fonts/icomoon.eot?sj9emo#iefix') format('embedded-opentype'),
+    url('../iconfont/icomoon-v1.0/fonts/icomoon.ttf?sj9emo') format('truetype'),
+    url('../iconfont/icomoon-v1.0/fonts/icomoon.woff?sj9emo') format('woff'),
+    url('../iconfont/icomoon-v1.0/fonts/icomoon.svg?sj9emo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
 .grid-bx{
     margin: 10px 0;
     height: 470px;
@@ -51,9 +62,135 @@
     height: 101px;
     border-bottom: 1px solid #eeeeee;
 }
+.user-inner{
+    position: relative;
+}
+    /*图标头像部分*/
+.user-avatar{
+    position:absolute;
+    top: 13px;
+    left: 20px;
+}
+.user-avatar a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-avatar a img{
+    width: 40px;
+    height: 40px;
+}
+.user-show{
+    position: absolute;
+    top: 16px;
+    left: 74px;
+}
+.user-show a{
+    color: #666;
+}
+.user-show a:hover{
+    color: red;
+}
+.user-show p a{
+    color: #333;
+}
+.user-show p{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.user-profit{
+    text-align: center;
+    padding-top: 67px;
+}
+.user-profit a{
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    background-color:red;
+    border-radius:13px;
+    margin:0 5px;
+    color: #fff;
+    -webkit-transition: background 0.5s ease,color 0.5s ease ;
+    -moz-transition: background 0.5s ease,color 0.5s ease ;
+    -ms-transition: background 0.5s ease,color 0.5s ease ;
+    -o-transition: background 0.5s ease,color 0.5s ease ;
+    transition: background 0.5s ease,color 0.5s ease ;
+}
+.user-profit a:hover{
+     background-color: #c81623;
+ }
+.user-profit .user-plus{
+      background: #363634;
+      color: #e5d790;
+}
+.user-plus:hover{
+    color: #fff;
+}
+.user-plus{
+    -webkit-transition: background 0.5s ease,color 0.5s ease;
+    -moz-transition: background 0.5s ease,color 0.5s ease;
+    -ms-transition: background 0.5s ease,color 0.5s ease;
+    -o-transition: background 0.5s ease,color 0.5s ease;
+    transition: background 0.5s ease,color 0.5s ease;
+}
+
 .news{
     height: 130px;
     border-bottom: 1px solid #eeeeee;
+}
+.hd{
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 10px 0 0;
+}
+.hd h5{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    margin-left: 15px;
+}
+.hd a {
+    float: right;
+    margin-right: 15px;
+}
+.hd a i{
+    font-size: 10px;
+    font-family: icomoon;
+}
+
+.news-list {
+    height: 88px;
+    margin: 0 15px;
+}
+.news-list li{
+    overflow: hidden;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+.news-list li a{
+    color: #666;
+}
+.news-list li a:hover{
+    color: red;
+}
+.news-list li a span{
+    display: inline-block;
+    width: 35px;
+    height: 16px;
+    line-height: 16px;
+    background-color:rgba(225,37,27,.08);
+    text-align: center;
+    margin-right: 6px;
+    color: red;
 }
 .expand{
     height: 237px;
