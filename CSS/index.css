@@ -195,13 +195,8 @@
 .expand{
     height: 237px;
 }
-.expand-list li{
-    width: 63px;
-    height: 55px;
-}
-.expand-list li a img{
-    width: 28px;
-    height: 28px;
+.expand-list{
+    height: 225px;
 }
 .expand-h{
     visibility: hidden;
