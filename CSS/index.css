@@ -45,13 +45,19 @@
     line-height: 25px;
     padding-left:18px;
     transition: background-color 0.2s ease;
+    position: relative;
 }
 .grid-item:hover{
     background-color: #d9d9d9;
 }
 .grid-item a:hover{
     color:red;
+    /*background-color: #449fdb;*/
 }
+
+
+
+/*中间版心部分*/
 
 
 
