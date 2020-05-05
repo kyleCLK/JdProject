@@ -55,20 +55,44 @@
     color:red;
     /*background-color: #449fdb;*/
 }
-
-.cate-pop{
-    display: none;
-    width: 998px;
-    height: 100%;
-    background-color: #449fdb;
+    /*左边列表的左边广告部分*/
+.ad{
     position: absolute;
     top: 0;
-    left: 190px;
-    z-index: 4;
+    left: -250px;
 }
-.grid-item-ul:hover ~.cate-pop{
-    display: block;
+.ad-r{
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 250px;
+    z-index: 999;
+    width: 0;
+    height: 480px;
+    background-image: url(../images/ad-r.jpg);
+    transition:all 0.5s ease ;
 }
+.ad:hover .ad-r{
+    width: 990px;
+    /*display: block;*/
+}
+
+/*.cate-pop{*/
+/*    display: none;*/
+/*    width: 998px;*/
+/*    height: 100%;*/
+/*    background-color: #449fdb;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 190px;*/
+/*    z-index: 4;*/
+/*}*/
+/*.grid-item-ul:hover ~.cate-pop{*/
+/*    display: block;*/
+/*}*/
+
+
+
 
 
 /*中间版心部分*/
@@ -224,7 +248,7 @@
     -o-transition: background 0.5s ease,color 0.5s ease;
     transition: background 0.5s ease,color 0.5s ease;
 }
-
+    /*新闻部分*/
 .news{
     height: 130px;
     border-bottom: 1px solid #eeeeee;
@@ -278,12 +302,54 @@
     margin-right: 6px;
     color: red;
 }
-.expand{
-    height: 237px;
-}
-.expand-list{
-    height: 225px;
-}
+    /*第三部分*/
+
 .expand-h{
     visibility: hidden;
+    overflow: hidden;
+    display: none;
 }
+.expand-list-ul{
+    margin-top: 10px;
+}
+.expand-li{
+    float: left;
+    width: 63px;
+    height: 55px;
+    text-align: center;
+}
+.expand-li a{
+    display: block;
+    transition: all .5s ease;
+}
+.expand-li a span{
+    display: block;
+    line-height: 25px;
+    color:#000000;
+}
+.expand-li a i{
+    position:relative;
+}
+.expand-li a i,.expand-li img{
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    display: block;
+}
+.expand-li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.expand-li:hover .expand-a{
+    display: none;
+}
+.expand-li:hover .expand-h{
+    display: block;
+    visibility:visible;
+    margin: 0 auto;
+ }
+.expand-li:hover span{
+    color:red;
+    transition:color 0.5s ease ;
+  }
